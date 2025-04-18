@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS concepts</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Rubik+Glitch+Pop&display=swap");
+      .one {
+        color: rgb(125, 78, 7);
+        background-color: aqua;
+      }
+      #two {
+        color: bisque;
+        background-color: blue;
+      }
+      div > p {
+        background-color: rgb(200, 12, 200);
+      }
+      div p {
+        background-color: brown;
+      }
+      * {
+        color: rgb(2, 151, 151);
+      }
+      a:link {
+        color: rgb(7, 24, 99);
+      }
+      a:visited {
+        color: rgb(176, 29, 78);
+      }
+      a:active {
+        color: aquamarine;
+      }
+      a:hover {
+        color: rgb(212, 209, 22);
+      }
+      .new {
+        background-color: blue;
+      }
+      .box1 {
+        color: rgb(176, 18, 91);
+        padding: 5px;
+        margin: 7px;
+        border: 3px dashed rgb(232, 83, 175);
+        height: 150px;
+        box-sizing: border-box;
+      }
+      .box2 {
+        color: blanchedalmond;
+      }
+      .b1 {
+        color: rgb(212, 42, 42);
+        background-color: yellow;
+        padding: 10px;
+        margin: 25px;
+      }
+      .b2 {
+        color: blueviolet;
+        background-color: rgb(219, 34, 65);
+        padding: 10px;
+        margin: 35px;
+      }
+      .font {
+        color: rgba(209, 22, 134, 0.457);
+        font-family: "Big Shoulders Stencil", sans-serif;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: blueviolet;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 3px;
+        text-indent: 5cm;
+        text-align: center;
+      }
+      .para {
+        color: black;
+        /* line-height: 1cm;
+        letter-spacing: 1px */
+        border: solid goldenrod 2px;
+        width: 60px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="one">This makes use of class selector</h1>
+    <div id="two">
+      This is a div and it makes use of ID selector
+      <article>
+        <p>
+          This is a para and here child selector is used but also the descendant
+          selector
+        </p>
+      </article>
+    </div>
+
+    <span> This is a span </span>
+    <br />
+    <a href="https://www.google.com">Go To Google</a>
+
+    <div class="new box1">This is a box.</div>
+    <div class="new box2">This is another box.</div>
+    <div class="b1">Margin collapse BOX 1</div>
+    <div class="b2">BOX 2</div>
+    <div class="font">FONTS CONCEPTS</div>
+    <p class="para">
+      <b>Concept of line height and letter letter-spacing:</b><br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, ullam.
+      Eveniet, doloribus obcaecati, laboriosam enim saepe, libero reprehenderit
+      necessitatibus omnis nesciunt fugiat nam perferendis harum quae sint.
+      Voluptates, modi eum? Architecto porro praesentium nisi atque velit
+      similique, adipisci voluptates ipsam doloribus placeat in quia iusto.
+    </p>
+  </body>
+</html>

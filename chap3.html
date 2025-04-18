@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Concepts</title>
+    <style>
+      .one {
+        border: 2px black solid;
+        color: white;
+        background-color: blue;
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        text-align: center;
+        font-size: 15px;
+      }
+      .two {
+        border: 2px solid white;
+        /* text-shadow: 5px 15px 5px red; */
+      }
+      .three {
+        border: palevioletred 2px solid;
+        outline: 5px green solid;
+        color: purple;
+        display: inline-block;
+        margin: 20px;
+        padding: 25px;
+        box-shadow: 14px 18px 3px 1px midnightblue;
+      }
+      nav ul li {
+        color: darkmagenta;
+        list-style-type: "🦄";
+        background-color: palevioletred;
+        list-style-position: inside;
+        border: 2px solid black;
+        /* display: flex;  for nav bar */
+      }
+      .boxx {
+        color: aquamarine;
+        background-color: rgba(169, 33, 196, 0.947);
+        border: 2px solid black;
+        width: 30vw;
+        height: 10vh;
+        /* overflow occured here */
+        overflow: scroll;
+      }
+      .box {
+        height: 433px;
+        width: 80vw;
+        padding: 3px;
+        margin: 3px;
+        border: 2px solid black;
+      }
+      .box1 {
+        background-color: rgb(255, 0, 179);
+        position: sticky;
+        top: 0px;
+        height: 111px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .box2 {
+        background-color: blueviolet;
+        position: relative;
+        top: 34px;
+        left: 56px;
+        z-index: 20px;
+        /* position: absolute;
+        top: 2px;
+        left: 20px; */
+      }
+      .box3 {
+        background-color: rgb(134, 6, 6);
+        position: fixed;
+        bottom: 0px;
+        left: 8vw;
+        height: 111px;
+      }
+      .box4 {
+        background-color: rgb(168, 194, 22);
+      }
+      .parent {
+        padding: 43px;
+        margin: 34px;
+        border: 3px solid purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      APPLYING THE CSS SIZING UNITS
+      <p class="two">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque possimus
+        voluptates quam explicabo sed natus dolore facilis nobis quas culpa! Non
+        nobis rerum et consectetur, atque sed placeat eveniet repudiandae
+        adipisci optio obcaecati deserunt? Vero porro a nisi totam, similique
+        tenetur dolorum possimus nulla molestiae.
+      </p>
+    </div>
+    <div class="three">This is currently a block element</div>
+    <div class="three">But now we have made it a inline element</div>
+    <span>This is already an inline element </span>
+    <span> NO need to make it inline</span>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="boxx">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia mollitia
+      voluptatum quibusdam asperiores quidem odit deleniti reiciendis dolorum
+      reprehenderit nesciunt accusantium, laudantium autem velit incidunt
+      voluptate beatae quaerat et nulla saepe deserunt. Sunt eaque ea deserunt
+      mollitia doloribus dicta optio neque nam perspiciatis quam impedit, fugit
+      laboriosam molestiae, non dignissimos!
+    </div>
+
+    <div class="parent">
+      <div class="box box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus,
+        vitae accusantium reiciendis alias ipsum praesentium ducimus inventore
+        exercitationem iure distinctio molestiae error corrupti, porro
+        asperiores ipsam maiores sed. Atque.
+      </div>
+      <div class="box box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quis
+        sed pariatur officia? Doloribus ipsam id aut explicabo dolores sequi
+        nisi atque, delectus voluptates natus eum unde! Dignissimos, dolore.
+        Aliquam.
+      </div>
+      <div class="box box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+        facere ut sapiente aliquam, corporis eius fugit repellendus magnam qui
+        totam quibusdam sint! Quod corporis velit minus culpa iure reprehenderit
+        corrupti?
+      </div>
+      <div class="box box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+        maiores atque vitae corrupti similique quis officiis sit porro soluta
+        molestiae totam quam, doloremque repudiandae perspiciatis distinctio
+        voluptatibus officia magnam accusantium?
+      </div>
+    </div>
+  </body>
+</html>

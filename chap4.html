@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Concepts</title>
+    <style>
+      :root {
+        --color: rgb(255, 0, 247);
+        --seccolor: rgb(185, 25, 221);
+        --defpad: 23px;
+        --defop: 0.4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        opacity: var(--defop);
+        list-style: none;
+        padding: var(--defpad);
+        border: 2px solid var(--seccolor);
+      }
+      ul li:first-child {
+        --color: rgb(243, 87, 8);
+        background-color: var(--color, blue);
+      }
+
+      .one {
+        background-color: var(--color);
+      }
+      .two {
+        background-color: var(--seccolor);
+      }
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+
+      img {
+        float: right;
+      }
+
+      .card {
+        border: 2px solid red;
+      }
+
+      .card:nth-child(3) {
+        background-color: aqua;
+        clear: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="two">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda fuga
+      impedit, quae laborum debitis tempore, accusamus sint ut quisquam placeat
+      et. Consequatur quo hic optio porro in quas aspernatur tempore repellendus
+      laborum modi nulla, ullam quae officiis fugiat sint eveniet, veritatis,
+      nemo animi odit rerum beatae. Quasi consequatur officiis voluptatum?
+    </div>
+    <br>
+    <div class="cards">
+      <img
+        src="https://media.istockphoto.com/id/928826678/photo/two-men-relaxing-and-fishing.jpg?s=2048x2048&w=is&k=20&c=fSG5LG9kxLNzjG9_YI1bXdz3-gD7UW2e2bd9arD5Vm8="
+        alt=""
+        width="230"
+      />
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
+          voluptatibus dolores ipsum illo nisi enim laboriosam, assumenda error
+          saepe dicta voluptatem dolorem ex cum? Accusamus, placeat atque
+          obcaecati aut eos magni saepe rem expedita! Similique.
+        </p>
+      </div>
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo officia
+        eos minima consequuntur, vitae aut.
+      </div>
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        suscipit saepe sunt, eaque et eligendi.
+      </div>
+    </div>
+  </body>
+</html>
